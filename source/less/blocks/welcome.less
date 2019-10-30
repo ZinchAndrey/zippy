@@ -1,0 +1,32 @@
+.welcome {
+  .tight-container();
+  padding-top: 60px;
+
+  &__header {
+    .header();
+    padding-bottom: 55px;
+  }
+
+  &__description {
+    font-family: @roboto, @arial;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    width: 97%;
+    padding-top: 20px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    &::after {
+      content: '';
+      background-image: url(../img/umbrella-icon.svg);
+      background-size: 195px 195px;
+      background-repeat: no-repeat;
+      min-width: 195px;
+      min-height: 200px;
+      display: inline-block;
+      margin-top: -20px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.projects-item {
+
+  background-color: @light-grey-background;
+
+  &:nth-child(even) {
+    background-color: darken(@light-grey-background, 5%);
+  }
+
+  &:hover {
+    background-color: @yellow;
+  }
+
+  &:hover &__study-button {
+    background-color: @purple;
+    color: @white;
+  }
+
+  &__header {
+    .header-min();
+    margin: 0;
+  }
+
+  &__wrapper {
+    padding: 45px 35px 45px 45px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 17px 0;
+    font-size: 13px;
+  }
+
+  &__study-button {
+    .button();
+    background-color: @white;
+  }
+}

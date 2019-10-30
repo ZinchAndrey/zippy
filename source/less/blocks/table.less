@@ -1,0 +1,43 @@
+.table {
+  margin-bottom: 85px;
+  
+  &__header {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    td {
+      min-height: 40px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__cost {
+    color: darken(@light-grey, 10%);
+
+    td {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__advantages {
+    font-size: 10px;
+    font-family: @arial;
+    border: none;
+  }
+
+  &__advantages td {
+    padding-bottom: 10px;
+  }
+
+  &__button td {
+    padding-top: 10px;
+  }
+
+  &__button button {
+    border: none;
+    .button();
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

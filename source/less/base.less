@@ -1,0 +1,74 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  // -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Thin.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+body {
+  font-family: @montserrat, @arial;
+  font-size: 14px;
+  line-height: 18px;
+  // text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  max-width: 1400px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-desktop() {
+  max-width: 1400px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.tight-container() {
+  max-width: 708px;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
