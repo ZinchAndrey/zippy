@@ -1,0 +1,29 @@
+.social {
+  &__list {
+    list-style: none;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 130px;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 33%;
+    text-align: center;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    svg {
+      padding: 0 5px;
+    }
+
+    &:hover svg {
+      fill: @purple;
+    }
+  }
+}

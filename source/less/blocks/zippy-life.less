@@ -1,5 +1,84 @@
 .zippy-life {
+  background-color: @light-grey-background;
+  padding-top: 80px;
+
   &__header {
     .header();
+  }
+
+  &__slider-wrapper {
+    // .tight-container();
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 110px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    width: 694px;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+
+  &__slider-block {
+    width: 606px;
+    overflow: hidden;
+  }
+
+  &__slider-line {
+    width: 885px;
+    height: 69px;
+    position: relative;
+    left: 0px;
+    transition: all ease 1s;
+
+    & img {
+      float: left;
+      margin-right: 15px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__slider-button {
+    width: 30px;
+    // background-color: lighten(@black, 5%);
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+
+    &:hover {
+      background-color: @purple;
+    }
+
+    &--left::after,
+    &--right::after {
+      content: '';
+      background-image: url('../img/Left Arrow@1x.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 15px 10px;
+      min-width: 10px;
+      min-height: 15px;
+      display: block;
+    }
+
+    &--left::after {
+      background-image: url('../img/Left Arrow@1x.svg');
+    }
+
+    &--right::after {
+      background-image: url('../img/Right Arrow@1x.svg');
+    }
   }
 }

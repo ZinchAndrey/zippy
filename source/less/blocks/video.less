@@ -9,6 +9,31 @@
   }
 
   &__block {
-    min-height: 495px;
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    min-height: 490px;
+    overflow: hidden;
+  }
+
+  &__frame {
+    width: 670px;
+    position: absolute;
+
+    &--left {
+      left: 0;
+      transform: translateX(-50%);
+    }
+
+    &--center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--right {
+      right: 0;
+      transform: translateX(50%);
+    }
   }
 }

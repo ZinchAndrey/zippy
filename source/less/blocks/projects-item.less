@@ -1,6 +1,7 @@
 .projects-item {
 
   background-color: @light-grey-background;
+  cursor: pointer;
 
   &:nth-child(even) {
     background-color: darken(@light-grey-background, 5%);
@@ -33,5 +34,9 @@
   &__study-button {
     .button();
     background-color: @white;
+  }
+
+  & img {
+    width: 100%;
   }
 }
