@@ -164,6 +164,7 @@ a {
   top: 0;
   width: 100%;
   min-width: 768px;
+  max-width: 1400px;
   height: 692px;
 }
 .welcome {
@@ -311,6 +312,8 @@ a {
 .projects-item {
   background-color: #efefef;
   cursor: pointer;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
 }
 .projects-item:nth-child(even) {
   background-color: #e2e2e2;
@@ -451,7 +454,7 @@ a {
   overflow: hidden;
 }
 .video__frame {
-  width: 670px;
+  width: 47%;
   position: absolute;
 }
 .video__frame--left {
@@ -502,8 +505,42 @@ a {
 .team-list {
   font-size: 15px;
 }
+.team-list__item {
+  position: relative;
+}
 .team-list__avatar {
   width: 175px;
+}
+.team-list__social-wrapper {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.team-list__hover-block {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+.team-list__hover-block:hover {
+  background-color: rgba(97, 74, 125, 0.5);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.team-list__hover-block:hover .team-list__social-wrapper {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.team-list__hover-block svg {
+  fill: #ffffff;
 }
 .team-list__name {
   text-transform: uppercase;

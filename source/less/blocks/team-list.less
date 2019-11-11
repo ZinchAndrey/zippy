@@ -1,8 +1,43 @@
 .team-list {
   font-size: 15px;
 
+  &__item {
+    position: relative;
+  }
+
   &__avatar {
     width: 175px;
+  }
+
+  &__social-wrapper {
+    display: none;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__hover-block {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+
+    &:hover {
+      background-color: rgba(38%, 29%, 49%, 0.5);
+      transition: all 0.5s ease-out;
+
+      .team-list__social-wrapper {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+      }
+    }
+
+    & svg {
+      fill: @white;
+    }
   }
 
   &__name {
